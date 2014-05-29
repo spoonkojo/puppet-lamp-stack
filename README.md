@@ -35,6 +35,7 @@ You're all set up. The webserver will now be accessible from http://localhost:30
 * php5-dev
 * php5-gd
 * php5-mcrypt
+* php5-curl
 * libapache2-mod-php5
 * mysql-server
 * curl
