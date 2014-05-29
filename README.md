@@ -23,7 +23,7 @@ Credit must be given where credit is due. Most of this work was made possible by
 
         $ vagrant up
 
-You're all set up. The webserver will now be accessible from http://localhost:8888
+You're all set up. The webserver will now be accessible from http://localhost:3000
 
 ## System Package include
 
@@ -40,3 +40,4 @@ You're all set up. The webserver will now be accessible from http://localhost:88
 * curl
 * vim
 * htop
+* git

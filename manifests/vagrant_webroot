@@ -1,7 +1,23 @@
+NameVirtualHost *:80
+
 <VirtualHost *:80>
   ServerName app.local
-  DocumentRoot /vagrant/webroot
-  <Directory /vagrant/webroot>
+  DocumentRoot /vagrant/webroot/project
+  <Directory /vagrant/webroot/project>
+    DirectoryIndex index.php index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+
+Listen 81
+NameVirtualHost *:81
+
+<VirtualHost *:81>
+  ServerName app.local
+  DocumentRoot /vagrant/webroot/pma
+  <Directory /vagrant/webroot/pma>
     DirectoryIndex index.php index.html
     AllowOverride All
     Order allow,deny
